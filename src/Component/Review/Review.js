@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Review = (props) => {
-    const{author,text,rating} = props.review;
+const Review = ({review}) => {
+    const{author,text,rating} = review;
     return (
         <div className="my-4 p-4 bg-slate-300 rounded">
             <div className="my-4 p-4 hover:bg-amber-500 bg-white rounded">
