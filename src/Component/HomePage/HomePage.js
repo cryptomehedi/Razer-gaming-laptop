@@ -1,7 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import useReviews from '../../hooks/useReviews';
 import HomeImg  from '../../img/laptop.png'
-import Reviews from '../Reviews/Reviews';
+import Review from '../Review/Review';
 const HomePage = () => {
+    const [reviews] = useReviews()
     return (
         <div className="container mx-auto">
             <div className="flex justify-between items-center">
@@ -16,8 +19,16 @@ const HomePage = () => {
             </div>
             <div className="text-center">
                 <h3 className="text-6xl font-semibold">Customer Reviews</h3>
-                <Reviews></Reviews>
-                <button className='bg-amber-500 rounded p-2'>See All Reviews</button>
+                <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                {
+                    reviews.slice(0,3).map(review => <Review
+                        review={review} 
+                        key={review._id} 
+                        ></Review>)
+                }
+                </div>
+                
+                <Link to={'/reviews'} className='bg-amber-500 rounded p-2'>See All Reviews</Link>
             </div>
         </div>
     );

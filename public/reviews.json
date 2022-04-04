@@ -1,0 +1,50 @@
+[
+    {
+        "_id": "58c03ac18060197ca0b52d51",
+        "author": "Pedro Butler",
+        "store": "58c03a958060197ca0b52d50",
+        "text": "Its provided a very good quality product, using it I can do a very good job. ",
+        "rating": 5,
+        "created": "2017-03-08T17:09:21.627Z"
+    },
+    {
+        "_id": "58c03af28060197ca0b52d53",
+        "author": "Rosa Fengler",
+        "store": "58c03a958060197ca0b52d50",
+        "text": "Thanks for providing me with a best quality product.",
+        "rating": 4.7,
+        "created": "2017-03-08T17:10:10.426Z"
+    },
+    {
+        "_id": "58c08780bbb1a51e0d43a050",
+        "author": "Victor Poulsen",
+        "store": "58c065dbbbb1a51e0d43a04f",
+        "text": "There is no other model in the market with 11 generation at a lower price.",
+        "rating": 5,
+        "created": "2017-03-08T22:36:48.575Z"
+    },
+    {
+        "_id": "58c08796bbb1a51e0d43a051",
+        "author": "Rafael Hicks",
+        "store": "58c061518060197ca0b52d5e",
+        "text": "The Dell brand laptop is really very good.I am satisfied to be able to use it.",
+        "rating": 4.1,
+        "created": "2017-03-08T22:37:10.483Z"
+    },
+    {
+        "_id": "58c087acbbb1a51e0d43a052",
+        "author": "Malak Krogstad",
+        "store": "58c060e98060197ca0b52d5d",
+        "text": "They provided a very good quality product, using it I can do a very good job.",
+        "rating": 4.9,
+        "created": "2017-03-08T22:37:32.829Z"
+    },
+    {
+        "_id": "58c087b9bbb1a51e0d43a053",
+        "author": "Juana Nieto",
+        "store": "58c0609b8060197ca0b52d5c",
+        "text": "It is very comfortable to carry.",
+        "rating": 4.5,
+        "created": "2017-03-08T22:37:45.917Z"
+    }
+]
