@@ -1,9 +1,10 @@
 import React from 'react';
+import Question from '../QuestionOne/QuestionOne';
 
 const Blog = () => {
     return (
-        <div>
-            <h4>this is a blog</h4>
+        <div className="container mx-auto mt-9">
+            <Question></Question>
         </div>
     );
 };
