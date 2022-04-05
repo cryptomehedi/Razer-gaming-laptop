@@ -12,14 +12,16 @@ function App() {
   return (
     <div>
       <Header></Header>
-      <Routes>
-        <Route path="/" element={<HomePage></HomePage>}></Route>
-        <Route path="/reviews" element={<Reviews></Reviews>}></Route>
-        <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
-        <Route path="/blog" element={<Blog></Blog>}></Route>
-        <Route path="/about" element={<About></About>}></Route>
-        <Route path="*" element={<PageNotFound></PageNotFound>}></Route>
-      </Routes>
+      <div className="px-4 md:px-16">
+        <Routes>
+          <Route path="/" element={<HomePage></HomePage>}></Route>
+          <Route path="/reviews" element={<Reviews></Reviews>}></Route>
+          <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
+          <Route path="/blog" element={<Blog></Blog>}></Route>
+          <Route path="/about" element={<About></About>}></Route>
+          <Route path="*" element={<PageNotFound></PageNotFound>}></Route>
+        </Routes>
+      </div>
     </div>
   );
 }

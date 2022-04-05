@@ -3,7 +3,7 @@ import Nav from '../Nav/Nav';
 
 const Header = () => {
     return (
-        <div  className="mt-3 font-semibold">
+        <div  className="md:mt-3 font-semibold">
             <Nav></Nav>
         </div>
     );

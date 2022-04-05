@@ -1,3 +1,5 @@
+import { faArrowCircleRight, faPlaneCircleCheck, faPlay } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import useReviews from '../../hooks/useReviews';
@@ -6,19 +8,21 @@ import Review from '../Review/Review';
 const HomePage = () => {
     const [reviews] = useReviews()
     return (
-        <div className="container mx-auto">
-            <div className="flex justify-between items-center">
-                <div>
-                    <h3 className="text-5xl font-semibold text-rose-600">Keep Up With The Trend</h3>
-                    <h3 className="text-7xl font-semibold text-lime-700">Your Next Step</h3>
-                    <p className="mt-16">Razer comes up with a unique feature for laptops and one can explore the entire range of gaming laptops that will be suitable for work and play. The laptops come with best graphics on great display that has the newest technology comprised within the system.</p>
-                </div>
-                <div className="w-full mt-16">
+        <div className="">
+            <div className="md:flex md:flex-row-reverse justify-between items-center">
+                
+                <div className="md:w-auto mt-16">
                     <img src={HomeImg} alt="" />
                 </div>
+                <div className="mt-8 md:mt-0">
+                    <h3 className="text-3xl font-semibold text-indigo-400">Keep Up With The Trend</h3>
+                    <h3 className="text-3xl font-semibold text-purple-500">Your Next Step</h3>
+                    <p className="mt-3">Razer comes up with a unique feature for laptops and one can explore the entire range of gaming laptops that will be suitable for work and play. The laptops come with best graphics on great display that has the newest technology comprised within the system.</p>
+                    <div className="mt-3"><Link to={'/'} className='hover:bg-indigo-400 bg-purple-400 font-semibold hover:text-white rounded p-2'>See More  <FontAwesomeIcon icon={faArrowCircleRight}></FontAwesomeIcon></Link></div>
+                </div>
             </div>
-            <div className="text-center">
-                <h3 className="text-6xl font-semibold">Customer Reviews</h3>
+            <div className="text-center my-16 md:my-4">
+                <h3 className="text-3xl font-medium font-serif">Customer Reviews</h3>
                 <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                 {
                     reviews.slice(0,3).map(review => <Review
@@ -28,7 +32,7 @@ const HomePage = () => {
                 }
                 </div>
                 
-                <Link to={'/reviews'} className='bg-amber-500 rounded p-2'>See All Reviews</Link>
+                <Link to={'/reviews'} className='hover:bg-amber-500 bg-orange-300 font-semibold hover:text-white rounded p-2'>See All Reviews</Link>
             </div>
         </div>
     );
