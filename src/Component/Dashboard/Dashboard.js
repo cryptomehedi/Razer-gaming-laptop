@@ -1,6 +1,8 @@
 import React from 'react';
 import FirstDataChart from '../FirstDataChart/FirstDataChart';
+import FourDataChart from '../FourDataChart/FourDataChart';
 import SecondDataChart from '../SecondDataChart/SecondDataChart';
+import ThirdChart from '../ThirdChart/ThirdChart';
 
 const Dashboard = () => {
     return (
@@ -11,6 +13,12 @@ const Dashboard = () => {
                 </div>
                 <div>
                     <SecondDataChart></SecondDataChart>
+                </div>
+                <div>
+                    <ThirdChart></ThirdChart>
+                </div>
+                <div>
+                    <FourDataChart></FourDataChart>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-import { faArrowCircleRight, faPlaneCircleCheck, faPlay } from '@fortawesome/free-solid-svg-icons';
+import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -32,7 +32,7 @@ const HomePage = () => {
                 }
                 </div>
                 
-                <Link to={'/reviews'} className='hover:bg-amber-500 bg-orange-300 font-semibold hover:text-white rounded p-2'>See All Reviews</Link>
+                <Link to={'/reviews'} className='hover:bg-indigo-400 bg-purple-400 font-semibold hover:text-white rounded p-2'>See All Reviews</Link>
             </div>
         </div>
     );
